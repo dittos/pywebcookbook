@@ -16,8 +16,8 @@
 
 파이썬 자체의 기능은 아니지만 파이썬으로 개발할 때 알아야 할 것들을 소개합니다.
 
-* [패키지 관리자](python/packager.md)
-* [가상 환경](python/virtualenv.md)
+* [패키지 관리자](ecosystem/packager.md)
+* [가상 환경](ecosystem/virtualenv.md)
 * DB-API
 * WSGI
 
