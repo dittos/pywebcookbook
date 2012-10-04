@@ -9,7 +9,27 @@
 
 pip는 PyPI(Python Package Index)에서 패키지를 내려받아 설치해주고 관리해주는 툴입니다. PyPI에 등록된 패키지 이름만 알면, 패키지 관리자가 알아서 정보를 가져와서 패키지를 설치해줍니다. [PyPI 사이트](http://pypi.python.org/)에서 패키지를 검색할 수 있습니다.
 
-TODO: pip 설치 방법
+pip 를 설치하려면 다음과 같은 방법을 사용하면 됩니다. 
+
+#### pip 설치 방법
+
+소스로 설치하는법은 다음과 같습니다. 대부분의 환경에서 지원이 됩니다.
+
+	wget http://pypi.python.org/packages/source/p/pip/pip-1.2.tar.gz 
+	tar xzf pip-1.2.tar.gz 
+	cd pip-1.2
+	python setup.py install
+
+easy_install 로 설치하는 방법은 다음과 같습니다.
+
+	easy_install pip
+	
+각 배포판의 패키지로 설치하는 방법
+
+	ubuntu $ apt-get install python-pip	
+	centos $ yum install python-setuptools ; easy_install pip
+
+TODO: pip 설치방법 ( 윈도우즈용 : http://stackoverflow.com/a/4921215/1712380 )
 
 ### 패키지 설치, 업그레이드, 삭제
 
@@ -19,9 +39,9 @@ TODO: pip 설치 방법
 	
 그러면 PyPI에서 패키지를 찾아서 설치해줍니다. 만약 설치하려는 패키지가 다른 패키지를 필요로 한다면 그 패키지도 함께 설치됩니다.
 
-이미 설치된 패키지를 최신 버전으로 업그레이드하려면 `-u` 옵션을 줘서 실행합니다.
+이미 설치된 패키지를 최신 버전으로 업그레이드하려면 `-U` 옵션을 줘서 실행합니다.
 
-	pip install -u simplejson
+	pip install -U simplejson
 	
 더이상 필요 없어진 패키지를 지우려면 `pip uninstall` 명령을 사용합니다.
 
