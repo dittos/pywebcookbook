@@ -37,7 +37,7 @@
 데이터베이스 연금술사가 되어봅시다!
 
 * [시작하기](sqlalchemy/getting_started.md)
-* 세션
+* [세션](sqlalchemy/session.md) 
 * 관계
 * Flask-SQLAlchemy: Flask 연동
 * Alembic: 마이그레이션
